@@ -1,0 +1,64 @@
+#reproductor{
+
+    width: 40%;
+    height: 40%;
+    background-color: lightblue;
+    margin-left: 32%;
+    margin-top: 5%;
+    border-radius: 8% 8% 8% 8%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#reproductor-contenido{
+    padding: 2%;
+    text-align: center;
+}
+
+#reproductor-h1{
+    text-align: center;
+}
+
+#reproductor-boton-add{
+    cursor: pointer;
+    background-color: green;
+    width: 35%;
+    height: 45%;
+    font-size: 25px;
+    margin-right: 2%;
+}
+
+#reproductor-boton-delete{
+    cursor: pointer;
+    background-color: red;
+    width: 35%;
+    height: 45%;
+    font-size: 25px;
+
+}
+
+#reproductor-text{
+    margin-right: 5%;
+}
+
+#reproductor-resultado{
+    display: flex;
+    flex-direction: row;
+}
+
+#reproductor-conjunto{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+
+}
+
+#reproductor-botones{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    padding: auto;
+    margin-left: 20%;
+
+}

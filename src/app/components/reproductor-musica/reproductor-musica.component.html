@@ -1,0 +1,40 @@
+
+<div id="reproductor">
+
+    <div id="reproductor-contenido">
+        <h1 id="reproductor-h1">Reproductor de musica</h1>
+
+        
+        <div id="reproductor-conjunto">
+            <input type="text" placeholder="Nueva canción" id="reproductor-text" [(ngModel)]="nombre_cancion">
+            <div id="reproductor-botones">
+                <button id="reproductor-boton-add" (click)="addCancion()">Añadir Cancion</button>
+                <button id="reproductor-boton-delete" (click)="deleteCancion()">Borrar Cancion</button>
+
+            </div>
+            
+
+        </div>
+        
+
+
+    </div>
+
+    
+
+    <ul>
+
+            @for(cancion of lista_canciones; track cancion.nombre_cancion){
+                <li id="reproductor-resultado">
+                    <input type="checkbox" [(ngModel)]="cancion.escuchado">
+
+                </li> 
+                Cancion {{cancion.id}}: {{cancion.nombre_cancion}} | {{cancion.escuchado?"Escuchado":"No escuchado"}}
+            }
+          
+        
+    </ul>
+
+
+
+</div>
